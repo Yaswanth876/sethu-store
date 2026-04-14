@@ -104,7 +104,7 @@ export function StatsSection() {
               key={`${stat.label}-${i}`}
               initial={{ scale: 0.85, opacity: 0.4 }}
               whileInView={{ scale: 1, opacity: 1 }}
-              viewport={{ root: null, margin: "0px -15% 0px -15%", amount: "some" }}
+              viewport={{ margin: "0px -15% 0px -15%", amount: "some" }}
               transition={{ duration: 0.4, ease: "easeOut" }}
               className={`h-full shrink-0 snap-center w-[70vw] sm:w-[60vw] md:w-auto ${i >= stats.length ? 'md:hidden' : ''}`}
             >

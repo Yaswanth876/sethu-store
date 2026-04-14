@@ -147,7 +147,7 @@ export function FeaturesSection() {
                 <motion.div 
                   initial={{ scale: 0.85, opacity: 0.4 }}
                   whileInView={{ scale: 1, opacity: 1 }}
-                  viewport={{ root: null, margin: "0px -15% 0px -15%", amount: "some" }}
+                  viewport={{ margin: "0px -15% 0px -15%", amount: "some" }}
                   transition={{ duration: 0.4, ease: "easeOut" }}
                   whileTap={{ scale: 0.98 }}
                   className="snap-center shrink-0 w-[70vw] max-w-[320px] bg-white p-8 rounded-[2.5rem] flex flex-col justify-between shadow-[0_10px_30px_rgba(0,0,0,0.06)] border border-black/5 min-h-[340px]"
@@ -167,7 +167,7 @@ export function FeaturesSection() {
                 <motion.div 
                   initial={{ scale: 0.85, opacity: 0.4 }}
                   whileInView={{ scale: 1, opacity: 1 }}
-                  viewport={{ root: null, margin: "0px -15% 0px -15%", amount: "some" }}
+                  viewport={{ margin: "0px -15% 0px -15%", amount: "some" }}
                   transition={{ duration: 0.4, ease: "easeOut" }}
                   whileTap={{ scale: 0.98 }}
                   className="snap-center shrink-0 w-[70vw] max-w-[320px] bg-black text-white p-8 rounded-[2.5rem] flex flex-col justify-between shadow-[0_15px_40px_rgba(0,0,0,0.25)] relative overflow-hidden min-h-[340px]"
@@ -192,7 +192,7 @@ export function FeaturesSection() {
                 <motion.div 
                   initial={{ scale: 0.85, opacity: 0.4 }}
                   whileInView={{ scale: 1, opacity: 1 }}
-                  viewport={{ root: null, margin: "0px -15% 0px -15%", amount: "some" }}
+                  viewport={{ margin: "0px -15% 0px -15%", amount: "some" }}
                   transition={{ duration: 0.4, ease: "easeOut" }}
                   whileTap={{ scale: 0.98 }}
                   className="snap-center shrink-0 w-[70vw] max-w-[320px] bg-[#553d00] text-[#dca400] p-8 rounded-[2.5rem] flex flex-col justify-between shadow-[0_15px_40px_rgba(85,61,0,0.2)] relative overflow-hidden min-h-[340px]"
@@ -213,7 +213,7 @@ export function FeaturesSection() {
                 <motion.div 
                   initial={{ scale: 0.85, opacity: 0.4 }}
                   whileInView={{ scale: 1, opacity: 1 }}
-                  viewport={{ root: null, margin: "0px -15% 0px -15%", amount: "some" }}
+                  viewport={{ margin: "0px -15% 0px -15%", amount: "some" }}
                   transition={{ duration: 0.4, ease: "easeOut" }}
                   whileTap={{ scale: 0.98 }}
                   className="snap-center shrink-0 w-[70vw] max-w-[320px] bg-[#efeeec] p-8 pb-0 rounded-[2.5rem] flex flex-col justify-between border border-[#e3e2e0] overflow-hidden min-h-[340px] relative"
