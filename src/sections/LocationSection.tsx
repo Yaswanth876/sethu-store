@@ -140,13 +140,37 @@ export function LocationSection() {
 
           </div>
 
-          {/* ── Right: Map visual with premium framing ── */}
-          <div className="lg:col-span-7 relative h-full min-h-full">
-            <RevealWrapper delay={0.4} className="w-full h-full">
+          {/* ── Right: Store photo + Map stacked ── */}
+          <div className="lg:col-span-7 flex flex-col gap-5 relative h-full">
+
+            {/* Store photo banner */}
+            <RevealWrapper delay={0.35}>
+              <motion.div
+                whileHover="hover"
+                className="group relative w-full h-[200px] lg:h-[240px] rounded-[2.5rem] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.1)] cursor-pointer flex-shrink-0"
+              >
+                <motion.img
+                  variants={{ hover: { scale: 1.06 } }}
+                  transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+                  src="/store-photos/sethustore9.png"
+                  alt="Sethu Store — front view"
+                  className="w-full h-full object-cover object-center"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                <div className="absolute bottom-5 left-7 flex items-center gap-3">
+                  <div className="w-2.5 h-2.5 rounded-full bg-green-400 shadow-[0_0_10px_rgba(74,222,128,0.7)] animate-pulse" />
+                  <span className="font-headline font-bold text-white text-sm tracking-wide">Sethu Store, Vinayagar Nagar</span>
+                </div>
+              </motion.div>
+            </RevealWrapper>
+
+            {/* Map */}
+            <RevealWrapper delay={0.45} className="flex-1 min-h-[300px]">
               <motion.div 
                 whileHover={{ scale: 1.02, rotate: -0.5 }}
                 transition={{ type: "spring", stiffness: 200, damping: 25 }}
-                className="w-full h-full rounded-[3rem] overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.12)] border-[16px] border-[#faf9f7] relative"
+                className="w-full h-full rounded-[2.5rem] overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.12)] border-[12px] border-[#faf9f7] relative min-h-[300px]"
               >
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.4827002982465!2d78.07729607507663!3d9.89369489020635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00cfb90ccfb68f%3A0x558a7f9e3124a35f!2sSethu%20Store!5e0!3m2!1sen!2sin!4v1776162501550!5m2!1sen!2sin"
@@ -157,21 +181,20 @@ export function LocationSection() {
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
 
-                {/* Exclusive Atelier Watermark / Badge Overlay */}
                 <motion.div 
                   initial={{ opacity: 0, scale: 0.9, y: 10 }}
                   whileInView={{ opacity: 1, scale: 1, y: 0 }}
                   whileHover={{ y: -5, scale: 1.05 }}
-                  className="absolute bottom-8 right-8 z-10 pointer-events-auto hidden sm:block"
+                  className="absolute bottom-6 right-6 z-10 pointer-events-auto hidden sm:block"
                 >
-                  <div className="glass px-6 py-4 rounded-2xl border border-black/5 shadow-ambient flex items-center gap-4 bg-white/90 backdrop-blur-md">
+                  <div className="glass px-5 py-3 rounded-2xl border border-black/5 shadow-ambient flex items-center gap-3 bg-white/90 backdrop-blur-md">
                     <div className="w-3 h-3 rounded-full bg-green-500 shadow-[0_0_12px_rgba(34,197,94,0.6)] animate-pulse" />
                     <span className="font-headline font-bold text-xs uppercase tracking-widest text-black">Visit us today</span>
                   </div>
                 </motion.div>
               </motion.div>
             </RevealWrapper>
-            
+
             {/* Decorative background element */}
             <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#faf9f7] rounded-full -z-10 blur-3xl opacity-50" />
           </div>
@@ -183,8 +206,23 @@ export function LocationSection() {
             <motion.div 
               className="bg-white rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.08)] border border-black/[0.04] overflow-hidden relative flex flex-col"
             >
-              {/* Top Half: Embedded Map */}
-              <div className="w-full h-[260px] relative bg-[#f4f3f1]">
+              {/* Store photo strip */}
+              <div className="w-full h-[180px] relative overflow-hidden">
+                <img
+                  src="/store-photos/sethustore9.png"
+                  alt="Sethu Store front"
+                  className="w-full h-full object-cover object-center"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30" />
+                <div className="absolute bottom-3 left-5 flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-green-400 shadow-[0_0_8px_rgba(74,222,128,0.7)] animate-pulse" />
+                  <span className="font-headline font-bold text-white text-[10px] tracking-widest uppercase">Vinayagar Nagar, Madurai</span>
+                </div>
+              </div>
+
+              {/* Embedded Map */}
+              <div className="w-full h-[240px] relative bg-[#f4f3f1]">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.4827002982465!2d78.07729607507663!3d9.89369489020635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00cfb90ccfb68f%3A0x558a7f9e3124a35f!2sSethu%20Store!5e0!3m2!1sen!2sin!4v1776162501550!5m2!1sen!2sin"
                     className="w-full h-full absolute inset-0 mix-blend-multiply opacity-90 grayscale-[0.2]"
@@ -195,7 +233,7 @@ export function LocationSection() {
                   ></iframe>
 
                   {/* Pulsing overlay status */}
-                  <div className="absolute top-5 left-5 glass px-3.5 py-2 rounded-[1rem] border border-black/5 shadow-sm flex items-center gap-2 bg-white/95 backdrop-blur-md">
+                  <div className="absolute top-4 left-4 glass px-3.5 py-2 rounded-[1rem] border border-black/5 shadow-sm flex items-center gap-2 bg-white/95 backdrop-blur-md">
                     <div className="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)] animate-pulse" />
                     <span className="font-headline font-bold text-[9px] uppercase tracking-[0.2em] text-black">Visit us today</span>
                   </div>

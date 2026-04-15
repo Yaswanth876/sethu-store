@@ -17,8 +17,8 @@ export function LegacySection() {
             <motion.img
               variants={{ hover: { scale: 1.05 } }}
               transition={{ duration: 0.8, ease: EASE_PREMIUM }}
-              src="/products/Turmeric powder .jpg"
-              alt="Heritage grocery essentials"
+              src="/store-photos/sethustore6.jpeg"
+              alt="Inside Sethu Store — heritage grocery"
               className="w-full h-full object-cover"
               loading="lazy"
             />

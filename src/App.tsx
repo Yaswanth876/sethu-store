@@ -3,6 +3,7 @@ import { MainLayout } from '@/layouts/MainLayout';
 import { HeroSection } from '@/sections/HeroSection';
 import { StatsSection } from '@/sections/StatsSection';
 import { LegacySection } from '@/sections/LegacySection';
+import { StoreGallerySection } from '@/sections/StoreGallerySection';
 import { ProductsMarqueeSection } from '@/sections/ProductsMarqueeSection';
 import { FeaturesSection } from '@/sections/FeaturesSection';
 
@@ -18,6 +19,7 @@ function App() {
       <HeroSection />
       <StatsSection />
       <LegacySection />
+      <StoreGallerySection />
       <ProductsMarqueeSection />
       <FeaturesSection />
 

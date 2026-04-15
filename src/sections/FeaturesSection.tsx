@@ -37,7 +37,7 @@ export function FeaturesSection() {
           </RevealWrapper>
           <RevealWrapper delay={0.12}>
             <h2 className="font-headline font-bold text-black tracking-tight"
-                style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)' }}>
+              style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)' }}>
               Uncompromising Curation
             </h2>
           </RevealWrapper>
@@ -48,7 +48,7 @@ export function FeaturesSection() {
 
           {/* Card 1: Large — Chemical-Free Ethos */}
           <RevealWrapper delay={0.1} className="md:col-span-8">
-            <motion.div 
+            <motion.div
               whileHover="hover"
               className="group bg-white p-8 sm:p-10 lg:p-12 rounded-[2rem] flex flex-col justify-between min-h-[320px] sm:min-h-[380px] h-full shadow-card overflow-hidden relative cursor-pointer"
             >
@@ -74,12 +74,12 @@ export function FeaturesSection() {
 
           {/* Black card — In-Store Experience */}
           <RevealWrapper delay={0.18} className="md:col-span-4">
-            <motion.div 
+            <motion.div
               whileHover="hover"
               className="group bg-black text-white p-8 sm:p-10 lg:p-12 rounded-[2rem] flex flex-col justify-between min-h-[280px] sm:min-h-[380px] h-full relative overflow-hidden cursor-pointer shadow-[0_10px_30px_rgba(0,0,0,0.2)] md:hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)] transition-shadow duration-500"
             >
               <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 md:group-hover:scale-150 transition-transform duration-700 ease-out" />
-              
+
               <div className="bg-white/10 w-12 h-12 lg:w-14 lg:h-14 rounded-full flex items-center justify-center mb-6 sm:mb-8 relative z-10 md:group-hover:scale-110 md:group-hover:bg-white/20 transition-all duration-300">
                 <Store className="w-6 h-6 lg:w-8 lg:h-8 text-white" strokeWidth={1.5} />
               </div>
@@ -91,7 +91,7 @@ export function FeaturesSection() {
 
           {/* Card 3: Gold-tinted — Community Sourcing */}
           <RevealWrapper delay={0.24} className="md:col-span-4">
-            <motion.div 
+            <motion.div
               whileHover="hover"
               className="group bg-[#553d00] text-[#dca400] p-8 sm:p-10 lg:p-12 rounded-[2rem] flex flex-col justify-between min-h-[240px] sm:min-h-[280px] h-full relative overflow-hidden cursor-pointer shadow-[0_10px_30px_rgba(85,61,0,0.15)] md:hover:shadow-[0_20px_40px_rgba(85,61,0,0.25)] transition-shadow duration-500"
             >
@@ -111,7 +111,7 @@ export function FeaturesSection() {
 
           {/* Card 4: The Trust Factor */}
           <RevealWrapper delay={0.3} className="md:col-span-8">
-            <motion.div 
+            <motion.div
               whileHover="hover"
               className="group bg-[#efeeec] p-8 sm:p-10 lg:p-12 rounded-[2rem] flex flex-col md:flex-row items-start md:items-center justify-between gap-6 md:gap-10 lg:gap-14 overflow-hidden min-h-[240px] sm:min-h-[280px] h-full cursor-pointer border border-[#e3e2e0] hover:border-[#dca400]/30 transition-colors duration-500 relative"
             >
@@ -124,8 +124,8 @@ export function FeaturesSection() {
                   since 1975.
                 </p>
               </div>
-              
-              <motion.div 
+
+              <motion.div
                 variants={{
                   hover: { rotate: 15, scale: 1.05, boxShadow: "0 30px 60px -12px rgba(26, 28, 27, 0.15)" }
                 }}
@@ -144,7 +144,7 @@ export function FeaturesSection() {
             {[0, 1, 2].map((loopIndex) => (
               <React.Fragment key={`feature-loop-${loopIndex}`}>
                 {/* Mobile Card 1: Ethos */}
-                <motion.div 
+                <motion.div
                   initial={{ scale: 0.85, opacity: 0.4 }}
                   whileInView={{ scale: 1, opacity: 1 }}
                   viewport={{ margin: "0px -15% 0px -15%", amount: "some" }}
@@ -156,15 +156,15 @@ export function FeaturesSection() {
                     <ShieldCheck className="w-10 h-10 text-black mb-10" strokeWidth={1.5} />
                   </motion.div>
                   <div>
-                      <h3 className="font-headline font-bold text-black text-[1.35rem] mb-3 leading-tight">Uncompromised Quality</h3>
-                      <p className="text-[13px] text-[#404944] editorial-text leading-relaxed">
-                        Every single item is rigorously vetted for authentic purity. If it doesn't meet the standards of our own home, it never enters our aisles.
-                      </p>
+                    <h3 className="font-headline font-bold text-black text-[1.35rem] mb-3 leading-tight">Uncompromised Quality</h3>
+                    <p className="text-[13px] text-[#404944] editorial-text leading-relaxed">
+                      Every single item is rigorously vetted for authentic purity. If it doesn't meet the standards of our own home, it never enters our aisles.
+                    </p>
                   </div>
                 </motion.div>
 
                 {/* Mobile Card 2: Walk-In */}
-                <motion.div 
+                <motion.div
                   initial={{ scale: 0.85, opacity: 0.4 }}
                   whileInView={{ scale: 1, opacity: 1 }}
                   viewport={{ margin: "0px -15% 0px -15%", amount: "some" }}
@@ -173,7 +173,7 @@ export function FeaturesSection() {
                   className="snap-center shrink-0 w-[70vw] max-w-[320px] bg-black text-white p-8 rounded-[2.5rem] flex flex-col justify-between shadow-[0_15px_40px_rgba(0,0,0,0.25)] relative overflow-hidden min-h-[340px]"
                 >
                   <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-                  <motion.div 
+                  <motion.div
                     animate={{ boxShadow: ['0 0 0px rgba(255,255,255,0.1)', '0 0 20px rgba(255,255,255,0.4)', '0 0 0px rgba(255,255,255,0.1)'] }}
                     transition={{ duration: 2, repeat: Infinity }}
                     className="bg-white/10 w-12 h-12 rounded-full flex items-center justify-center mb-10 relative z-10"
@@ -189,7 +189,7 @@ export function FeaturesSection() {
                 </motion.div>
 
                 {/* Mobile Card 3: Community */}
-                <motion.div 
+                <motion.div
                   initial={{ scale: 0.85, opacity: 0.4 }}
                   whileInView={{ scale: 1, opacity: 1 }}
                   viewport={{ margin: "0px -15% 0px -15%", amount: "some" }}
@@ -210,7 +210,7 @@ export function FeaturesSection() {
                 </motion.div>
 
                 {/* Mobile Card 4: Trust */}
-                <motion.div 
+                <motion.div
                   initial={{ scale: 0.85, opacity: 0.4 }}
                   whileInView={{ scale: 1, opacity: 1 }}
                   viewport={{ margin: "0px -15% 0px -15%", amount: "some" }}
@@ -224,10 +224,10 @@ export function FeaturesSection() {
                       Built upon half a century of unbroken dedication. Three generations of Madurai families rely entirely on our unwavering standards.
                     </p>
                   </div>
-                  
+
                   <div className="w-32 h-32 bg-white/60 rounded-tl-full rounded-tr-[3rem] shrink-0 backdrop-blur-md flex items-center justify-center shadow-ambient relative z-10 self-end mt-auto -mr-8 border border-white translate-y-6">
                     <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-white/70 rounded-full opacity-60" />
-                    <motion.span 
+                    <motion.span
                       animate={{ rotate: [-5, 2, -5], scale: [1, 1.05, 1] }} transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                       className="font-headline font-bold text-black/90 text-[1.8rem] rotate-[-5deg] relative z-20 -translate-x-2 -translate-y-2 block"
                     >

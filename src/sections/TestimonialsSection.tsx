@@ -29,13 +29,24 @@ const REVIEWS = [
   {
     id: 3,
     rating: 5,
-    quote: "Sethu Store isn't just where I buy my rice; it's where I feel part of a tradition. The quality is consistent, but the trust is what keeps us coming back. Absolutely fantastic selection of products.",
-    author: "Anand R.",
-    reviews: "12 reviews",
-    initials: "A",
+    quote: "Freshness, affordability, and convenience all in one place. A perfect stop for everyday needs.",
+    author: "Riashree",
+    reviews: "1 review",
+    initials: "R",
     colors: "from-[#34A853] to-[#25803d]",
     accent: "text-[#34A853]",
     quoteColor: "group-hover:text-[#34A853]/20"
+  },
+  {
+    id: 4,
+    rating: 5,
+    quote: "From my Childhood, we are regular customer of this shop! For our street people it's not just a shop it's an Emotion 🙂🤞 ...",
+    author: "C Sree Padmajaa",
+    reviews: "7 reviews · 1 photo",
+    initials: "C",
+    colors: "from-[#9334E6] to-[#6b1fb0]",
+    accent: "text-[#9334E6]",
+    quoteColor: "group-hover:text-[#9334E6]/20"
   }
 ];
 
@@ -136,7 +147,7 @@ export function TestimonialsSection() {
         </div>
 
         {/* --- DESKTOP GRID DIRECTORY (Hidden on Mobile) --- */}
-        <div className="hidden md:grid md:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
+        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto mb-16">
           {REVIEWS.map((review, i) => (
             <RevealWrapper key={review.id} delay={0.2 + (i * 0.1)} className="h-full">
               <motion.div 

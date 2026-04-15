@@ -1,78 +1,78 @@
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { EASE_PREMIUM } from '@/components/common/RevealWrapper';
 
-// Floating collage cards data
+// Floating collage cards — now featuring real store photos
 const collageCards = [
   {
-    id: 'grains',
-    label: 'Legacy Grains',
-    caption: 'Pure Rice',
+    id: 'store-front',
+    label: 'Our Store',
+    caption: 'Est. 1975',
     rotate: '-6deg',
     position: 'top-[5%] -left-[15%] md:top-[8%] md:left-[3%]',
     size: 'w-28 md:w-44',
     imgH: 'h-20 md:h-36',
     delay: 0.4,
-    src: '/products/Rice.jpg',
+    src: '/store-photos/sethustore.png',
     visibility: 'block',
   },
   {
-    id: 'spices',
-    label: 'Pure Spices',
-    caption: 'Hand-Milled',
+    id: 'store-interior',
+    label: 'Inside the Store',
+    caption: 'Fresh Daily',
     rotate: '3deg',
     position: 'bottom-[12%] -left-[10%] md:bottom-[12%] md:left-[8%]',
     size: 'w-32 md:w-52',
     imgH: 'h-24 md:h-44',
     delay: 0.55,
-    src: '/products/Turmeric powder .jpg',
+    src: '/store-photos/sethustore1.jpeg',
     visibility: 'block',
   },
   {
-    id: 'oils',
-    label: 'Pure Oils',
-    caption: 'Wood-Pressed',
+    id: 'store-shelves',
+    label: 'Our Shelves',
+    caption: 'Always Stocked',
     rotate: '10deg',
     position: 'top-[15%] -right-[15%] md:top-[12%] md:right-[4%]',
     size: 'w-32 md:w-48',
     imgH: 'h-24 md:h-40',
     delay: 0.5,
-    src: '/products/Groundnut oil .webp',
+    src: '/store-photos/sethustore2.jpeg',
     visibility: 'block',
   },
   {
-    id: 'household',
-    label: 'Essentials',
-    caption: 'Heritage Care',
+    id: 'store-products',
+    label: 'Daily Essentials',
+    caption: 'Quality Curated',
     rotate: '-10deg',
     position: 'bottom-[8%] -right-[12%] md:bottom-[6%] md:right-[10%]',
     size: 'w-28 md:w-44',
     imgH: 'h-20 md:h-36',
     delay: 0.6,
-    src: '/products/Agarbatti.jpg',
+    src: '/store-photos/sethustore3.jpeg',
     visibility: 'block',
   },
   {
-    id: 'snacks',
-    label: 'Snacks',
-    caption: 'Traditional Bites',
+    id: 'store-4',
+    label: 'Wide Selection',
+    caption: 'Premium Quality',
     rotate: '-5deg',
     position: 'top-[40%] left-[1%]',
     size: 'w-36 md:w-40',
     imgH: 'h-28 md:h-32',
     delay: 0.75,
-    src: '/products/Biscuits.jpg',
+    src: '/store-photos/sethustore4.jpeg',
     visibility: 'hidden lg:block',
   },
   {
-    id: 'sweets',
-    label: 'Sweets',
-    caption: 'Pure Jaggery',
+    id: 'store-5',
+    label: 'Heritage Space',
+    caption: 'Since 1975',
     rotate: '12deg',
     position: 'bottom-[30%] right-[3%]',
     size: 'w-32 md:w-36',
     imgH: 'h-24 md:h-28',
     delay: 0.8,
-    src: '/products/Jaggery.jpg',
+    src: '/store-photos/sethustore5.jpeg',
     visibility: 'hidden lg:block',
   },
 ];
@@ -99,8 +99,21 @@ export function HeroSection() {
       className="relative min-h-[100dvh] flex flex-col items-center justify-center overflow-hidden pt-24 pb-16 px-6"
     >
 
-      {/* ── Subtle warm background tint ── */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(0,0,0,0.04),transparent)] pointer-events-none" />
+      {/* ── Store photo background ── */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* The real store photo */}
+        <img
+          src="/store-photos/sethustore.png"
+          alt=""
+          aria-hidden="true"
+          className="w-full h-full object-cover object-center"
+        />
+        {/* Warm cream wash — keeps text readable */}
+        <div className="absolute inset-0 bg-[#faf9f7]/80" />
+        {/* Soft vignette at top & bottom */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(0,0,0,0.06),transparent)]" />
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#faf9f7] to-transparent" />
+      </div>
 
       {/* ── Floating Collage Cards (Responsive) ── */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-60 md:opacity-100">
@@ -146,6 +159,20 @@ export function HeroSection() {
 
       {/* ── Hero Content ── */}
       <div className="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center mt-[-5dvh]">
+        {/* Store Logo */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8, y: 20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.05, ease: EASE_PREMIUM }}
+          className="mb-6"
+        >
+          <img
+            src="/store-photos/sethustore-logo1.png"
+            alt="Sethu Store Logo"
+            className="w-24 h-24 md:w-32 md:h-32 object-contain mx-auto drop-shadow-md"
+          />
+        </motion.div>
+
         {/* Eyebrow */}
         <motion.span
           initial={{ opacity: 0, y: 20 }}
