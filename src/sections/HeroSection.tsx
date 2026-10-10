@@ -12,7 +12,7 @@ const collageCards = [
     size: 'w-28 md:w-44',
     imgH: 'h-20 md:h-36',
     delay: 0.4,
-    src: '/store-photos/sethustore.png',
+    src: '/store-photos/sethustore.webp',
     visibility: 'block',
   },
   {
@@ -24,7 +24,7 @@ const collageCards = [
     size: 'w-32 md:w-52',
     imgH: 'h-24 md:h-44',
     delay: 0.55,
-    src: '/store-photos/sethustore1.jpeg',
+    src: '/store-photos/sethustore1.webp',
     visibility: 'block',
   },
   {
@@ -36,7 +36,7 @@ const collageCards = [
     size: 'w-32 md:w-48',
     imgH: 'h-24 md:h-40',
     delay: 0.5,
-    src: '/store-photos/sethustore2.jpeg',
+    src: '/store-photos/sethustore2.webp',
     visibility: 'block',
   },
   {
@@ -48,7 +48,7 @@ const collageCards = [
     size: 'w-28 md:w-44',
     imgH: 'h-20 md:h-36',
     delay: 0.6,
-    src: '/store-photos/sethustore3.jpeg',
+    src: '/store-photos/sethustore3.webp',
     visibility: 'block',
   },
   {
@@ -60,7 +60,7 @@ const collageCards = [
     size: 'w-36 md:w-40',
     imgH: 'h-28 md:h-32',
     delay: 0.75,
-    src: '/store-photos/sethustore4.jpeg',
+    src: '/store-photos/sethustore4.webp',
     visibility: 'hidden lg:block',
   },
   {
@@ -72,7 +72,7 @@ const collageCards = [
     size: 'w-32 md:w-36',
     imgH: 'h-24 md:h-28',
     delay: 0.8,
-    src: '/store-photos/sethustore5.jpeg',
+    src: '/store-photos/sethustore5.webp',
     visibility: 'hidden lg:block',
   },
 ];
@@ -103,7 +103,7 @@ export function HeroSection() {
       <div className="absolute inset-0 pointer-events-none">
         {/* The real store photo */}
         <img
-          src="/store-photos/sethustore.png"
+          src="/store-photos/sethustore.webp"
           alt=""
           aria-hidden="true"
           className="w-full h-full object-cover object-center"

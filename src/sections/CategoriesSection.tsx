@@ -10,7 +10,7 @@ const products = [
     title: '🥛 Milk Products',
     subtitle: 'Fresh Dairy & Ghee',
     badge: 'Fresh Daily',
-    src: '/products/Ghee.jpg',
+    src: '/optimized/products/Ghee.webp',
     description: 'Pure, farm-fresh milk, curd, and artisanal ghee for your daily needs.'
   },
   {
@@ -18,7 +18,7 @@ const products = [
     title: '🌶️ Spices & Masala',
     subtitle: 'Pure Hand-Milled Blends',
     badge: 'Artisan',
-    src: '/products/Chilli powder .jpg',
+    src: '/optimized/products/Chilli powder.webp',
     description: 'Unadulterated spices that bring the authentic taste of heritage to your kitchen.'
   },
   {
@@ -26,7 +26,7 @@ const products = [
     title: '🍪 Snacks & Biscuits',
     subtitle: 'Traditional & Modern Bites',
     badge: 'Best Selection',
-    src: '/products/Biscuits.jpg',
+    src: '/optimized/products/Biscuits.webp',
     description: 'A curated collection of crispy savories and premium tea-time biscuits.'
   },
   {
@@ -34,7 +34,7 @@ const products = [
     title: '🥤 Beverages',
     subtitle: 'Tea, Coffee & Juices',
     badge: 'Refreshment',
-    src: '/products/Tea.png',
+    src: '/optimized/products/Tea.png',
     description: 'From aromatic filter coffee to refreshing fruit blends and standard soft drinks.'
   },
   {
@@ -42,7 +42,7 @@ const products = [
     title: '🧼 Soaps & Care',
     subtitle: 'Personal & Body Care',
     badge: 'Premium Care',
-    src: '/products/Soap.jpg',
+    src: '/optimized/products/Soap.webp',
     description: 'Trusted personal care brands and artisanal bathing essentials.'
   },
   {
@@ -50,7 +50,7 @@ const products = [
     title: '🪥 Hygiene Essentials',
     subtitle: 'Toothpaste & Oral Care',
     badge: 'Daily Essential',
-    src: '/products/Toothpaste .jpg',
+    src: '/optimized/products/Toothpaste.webp',
     description: 'Complete oral hygiene solutions for every member of the family.'
   },
   {
@@ -58,7 +58,7 @@ const products = [
     title: '🧺 Washing Liquids',
     subtitle: 'Detergents & Cleaners',
     badge: 'Home Care',
-    src: '/products/Detergent liquid .jpg',
+    src: '/optimized/products/Detergent liquid.webp',
     description: 'Powerful washing liquids and detergents for a spotless household.'
   },
   {
@@ -66,7 +66,7 @@ const products = [
     title: '🏠 Household Goods',
     subtitle: 'Household Requirements',
     badge: 'Pantry Staple',
-    src: '/products/Sugar.jpg',
+    src: '/optimized/products/Sugar.webp',
     description: 'Everything else required to keep your modern household running smoothly.'
   },
 ];
