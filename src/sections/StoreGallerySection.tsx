@@ -5,15 +5,15 @@ import { RevealWrapper, EASE_PREMIUM } from '@/components/common/RevealWrapper';
 
 /* ─── Photo manifest ─────────────────────────────────────────────── */
 const PHOTOS = [
-  { src: '/store-photos/sethustore9.png',   alt: 'Sethu Store — flagship front view',    hero: true },
-  { src: '/store-photos/sethustore1.jpeg',  alt: 'Store interior — fully stocked shelves' },
-  { src: '/store-photos/sethustore2.jpeg',  alt: 'Fresh groceries & daily essentials' },
-  { src: '/store-photos/sethustore3.jpeg',  alt: 'Spices, snacks & household goods' },
-  { src: '/store-photos/sethustore6.jpeg',  alt: 'Sethu Store exterior — Pasumalai' },
-  { src: '/store-photos/sethustore10.jpeg', alt: 'Daily essentials and grocery shelves' },
-  { src: '/store-photos/sethustore4.jpeg',  alt: 'Wide variety of branded products' },
-  { src: '/store-photos/sethustore.png',    alt: 'Sethu Store storefront signage' },
-  { src: '/store-photos/sethustore8.jpeg',  alt: 'Customer-favourite products' },
+  { src: '/store-photos/sethustore9.webp',   alt: 'Sethu Store — flagship front view',    hero: true },
+  { src: '/store-photos/sethustore1.webp',  alt: 'Store interior — fully stocked shelves' },
+  { src: '/store-photos/sethustore2.webp',  alt: 'Fresh groceries & daily essentials' },
+  { src: '/store-photos/sethustore3.webp',  alt: 'Spices, snacks & household goods' },
+  { src: '/store-photos/sethustore6.webp',  alt: 'Sethu Store exterior — Pasumalai' },
+  { src: '/store-photos/sethustore10.webp', alt: 'Daily essentials and grocery shelves' },
+  { src: '/store-photos/sethustore4.webp',  alt: 'Wide variety of branded products' },
+  { src: '/store-photos/sethustore.webp',    alt: 'Sethu Store storefront signage' },
+  { src: '/store-photos/sethustore8.webp',  alt: 'Customer-favourite products' },
 ];
 
 type Photo = typeof PHOTOS[0];
